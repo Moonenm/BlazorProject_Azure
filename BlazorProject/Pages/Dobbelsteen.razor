@@ -1,0 +1,42 @@
+﻿<!-- 12GridDobbelComponent.razor -->
+@page "/dobbelsteen"
+
+<h3>Dobbelsteen Spel</h3>
+<!-- Definieer de Blazor-component -->
+<div class="container mt-4">
+    <div class="row">
+        <!-- Loop om 12 kaarten te genereren -->
+        @for (int i = 1; i <= 12; i++)
+        {
+            <div class="col-md-3 mb-3">
+                <!-- Voeg een stijl toe om de achtergrondkleur te wijzigen -->
+                <div class="card text-white" style="@CardStyle(i - 1)">
+                    <div class="card-body">
+                        <h5 class="card-title">speler @i</h5>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <!-- Resultaatmelding -->
+    <div class="row justify-content-center mt-3">
+        <div class="col-6 align-self-center text-center">
+            <div class="alert alert-info" role="alert">@resultMessage</div>
+        </div>
+    </div>
+
+    <!-- Invoerveld en knoppen voor spelen en resetten -->
+    <div class="row justify-content-center mt-3">
+        <div class="col-3 text-center">
+            Voer een getal in (1-12) <input type="number" @bind-value="antwoord" min="1" max="12" class="form-control" placeholder="1">
+        </div>
+        <div class="col-3 text-center">
+            <button @onclick="Play" class="btn btn-primary">PLAY</button>
+        </div>
+        <div class="col-3 text-center">
+            <button @onclick="Reset" class="btn btn-danger">RESET</button>
+        </div>
+    </div>
+</div>
+

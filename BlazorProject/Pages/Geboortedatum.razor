@@ -1,0 +1,23 @@
+﻿@page "/geboortedatum"
+
+<div class="container">
+    <h3>Opdracht geboortedatum FunFacts</h3>
+
+    <div class="row">
+        <div class="col-md-4">
+            <form>
+                <div class="row">
+                    <div class="col-auto mb-3">
+                        <label for="geboortedatum">Je geboortedatum</label>
+                        <input type="date" @bind="geboortedatum" min="@minDate">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-auto mb-3">
+                        <button class="btn btn-primary btn-lg mb-2" id="check" @onclick="StoreAndGo">Check FunFacts</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
