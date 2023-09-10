@@ -67,8 +67,8 @@ a, .btn-link {
 /* Bovenbalkstijlen */
 .topbar {
     /*background-color: rgba(0,0,0,0.4);*/
-    background-image: url(/images/banner-902589_1920.jpg); /* Vervang 'your-image.jpg' door de naam van je afbeeldingsbestand */
-   /* background-image: url(/BlazorProject/images/banner-902589_1920.jpg); /* Vervang 'your-image.jpg' door de naam van je afbeeldingsbestand */
+    /*background-image: url(/images/banner-902589_1920.jpg); /* Vervang 'your-image.jpg' door de naam van je afbeeldingsbestand */
+    background-image: url(/BlazorProject/images/banner-902589_1920.jpg); /* Vervang 'your-image.jpg' door de naam van je afbeeldingsbestand */
     background-size: cover; /* Hiermee wordt de afbeelding op schaal weergegeven om de hele header te bedekken */
     background-position: center center; /* Het uitlijnen van de afbeelding in het midden van de header */
     height: 75px; /* Pas de hoogte aan naar jouw wens */
