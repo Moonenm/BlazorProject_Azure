@@ -51,7 +51,7 @@ namespace BlazorProject.Pages
         }
         private void GoBack()
         {
-            NavigationManager.NavigateTo("geboortedatum");
+            NavigationManager.NavigateTo("/geboortedatum");
         }
     }
 }
