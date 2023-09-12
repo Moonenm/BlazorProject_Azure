@@ -1,0 +1,87 @@
+﻿@inherits ToggleSidebarBase
+
+<header class="c-header">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-auto">
+                <div class="c-header__hamburger" @onclick="ToggleSidebar">
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                </div>
+            </div>
+            <div class="col-auto">
+                <div class="c-header__navigation">
+                    <nav>
+                        <ul>
+                            <li>
+                                <NavLink href="" Match="NavLinkMatch.All">
+                                    <span class="oi oi-home" aria-hidden="true"></span> Home
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink href="filmsearch">
+                                    <span class="oi oi-eye" aria-hidden="true"></span> Movies
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink href="foto">
+                                    <span class="oi oi-image" aria-hidden="true"></span> Toon Foto
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink href="geboortedatum">
+                                    <span class="oi oi-calendar" aria-hidden="true"></span> FunFacts
+                                </NavLink>
+                            </li>
+                            <li>
+                                <NavLink href="dobbelsteen">
+                                    <span class="oi oi-euro" aria-hidden="true"></span> Dobbelen
+                                </NavLink>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<aside class="c-sidebar @SidebarCSSClass">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="c-sidebar__navigation">
+                    <ul>
+                        <li>
+                            <NavLink href="" Match="NavLinkMatch.All">
+                                <span class="oi oi-home" aria-hidden="true"></span> Home
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink href="filmsearch">
+                                <span class="oi oi-eye" aria-hidden="true"></span> Movies
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink href="foto">
+                                <span class="oi oi-image" aria-hidden="true"></span> Toon Foto
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink href="geboortedatum">
+                                <span class="oi oi-calendar" aria-hidden="true"></span> FunFacts
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink href="dobbelsteen">
+                                <span class="oi oi-euro" aria-hidden="true"></span> Dobbelen
+                            </NavLink>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</aside>

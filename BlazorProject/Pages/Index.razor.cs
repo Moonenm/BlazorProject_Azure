@@ -9,19 +9,19 @@ namespace BlazorProject.Pages
 
         private void FilmSearch()
         {
-            NavigationManager.NavigateTo("filmsearch");
+            NavigationManager.NavigateTo("/filmsearch");
         }
         private void Fotozoeken()
         {
-            NavigationManager.NavigateTo("foto");
+            NavigationManager.NavigateTo("/foto");
         }
         private void Funfactsstarten()
         {
-            NavigationManager.NavigateTo("geboortedatum");
+            NavigationManager.NavigateTo("/geboortedatum");
         }
         private void Dobbelen()
         {
-            NavigationManager.NavigateTo("dobbelsteen");
+            NavigationManager.NavigateTo("/dobbelsteen");
         }
 
     }

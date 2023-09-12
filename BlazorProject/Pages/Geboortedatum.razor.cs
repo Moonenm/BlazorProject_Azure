@@ -31,7 +31,7 @@ namespace BlazorProject.Pages
             await LocalStorage.SetItemAsync("gbdate", geboortedatum);
 
             // Navigeer naar een andere pagina (vervang "opdracht_funfacts_OPL.html" door de gewenste URL)
-            NavigationManager.NavigateTo("funfacts");
+            NavigationManager.NavigateTo("/funfacts");
 
         }
     }
